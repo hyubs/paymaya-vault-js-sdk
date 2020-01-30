@@ -57,6 +57,10 @@ main();
   * [ ] `lib/HTTPRequest`
   * [ ] `lib/VaultAPIRequest`
 
+### Others
+
+  * [ ] Export type declarations
+
 ## Stack
 
   * TypeScript
