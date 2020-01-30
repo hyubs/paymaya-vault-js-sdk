@@ -1,11 +1,19 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
 var _api = require("./api");
 
 var _lib = require("./lib");
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+/**
+ * PayMaya Vault SDK
+ */
 class PayMayaVault {
   constructor(publicAPIKey, secretAPIKey, environment) {
     _defineProperty(this, "environment", void 0);
@@ -37,4 +45,6 @@ class PayMayaVault {
 
 }
 
+var _default = PayMayaVault;
+exports.default = _default;
 module.exports = PayMayaVault;

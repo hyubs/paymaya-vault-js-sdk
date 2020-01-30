@@ -20,6 +20,10 @@ function responsePromiseCallback(resolve, reject) {
     return resolve(body);
   };
 }
+/**
+ * A generic class for HTTP Requests.
+ */
+
 
 class HTTPRequest {
   constructor({
