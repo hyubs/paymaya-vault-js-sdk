@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "tslint:latest"
+  ],
+  "rules": {
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
+    "no-unused-expression-chai": true
+  },
+  "rulesDirectory": [
+    "tslint-no-unused-expression-chai"
+  ]
+}
