@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "description": "A sample SDK for the PayMaya Vault API.",
   "main": "dist/PayMayaVault.js",
+  "types": "types/PayMayaVault.d.js",
   "scripts": {
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
-    "build": "babel src --out-dir dist --extensions \".ts\"",
+    "build": "npm run build:types && npm run build:js",
+    "build:js": "babel src --out-dir dist --extensions \".ts\"",
+    "build:types": "tsc --declaration --emitDeclarationOnly --esModuleInterop -outDir types src/PayMayaVault.ts",
     "test": "mocha -r ts-node/register \"test/**/*.spec.ts\""
   },
   "author": "Hyubs Ursua <hyubs.u@gmail.com>",
