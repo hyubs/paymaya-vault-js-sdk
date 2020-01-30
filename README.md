@@ -4,8 +4,20 @@ A sample SDK for the PayMaya Vault API.
 
 ## Quick Start
 
+### Install
+
+```sh
+# NPM
+npm i hyubs/paymaya-vault-node-sdk
+
+# Yarn
+yarn add https://github.com/hyubs/paymaya-vault-js-sdk.git
+```
+
+### Usage
+
 ```js
-const PayMayaVault = require("PayMaya-Vault-Node-SDK/dist/PayMayaVault");
+const PayMayaVault = require("paymaya-vault-node-sdk");
 
 const PUBLIC_API_KEY = "pk-Z0OSzLvIcOI2UIvDhdTGVVfRSSeiGStnceqwUE7n0Ah";
 const SECRET_API_KEY = "sk-X8qolYjy62kIzEbr0QRK1h4b4KDVHaNcwMYk39jInSl";
